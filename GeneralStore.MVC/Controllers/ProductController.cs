@@ -16,5 +16,11 @@ namespace GeneralStore.MVC.Controllers
         {
             return View(_db.Products.ToList());
         }
+
+        // GET: Product
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
