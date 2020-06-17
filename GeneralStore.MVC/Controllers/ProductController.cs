@@ -76,7 +76,7 @@ namespace GeneralStore.MVC.Controllers
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest)
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Product product = _db.Products.Find(id);
             if (product == null)
@@ -116,5 +116,6 @@ namespace GeneralStore.MVC.Controllers
                 return HttpNotFound();
             }
             return View(product);
+        }
     }
 }
