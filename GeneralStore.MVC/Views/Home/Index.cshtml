@@ -2,19 +2,20 @@
     ViewBag.Title = "General Store Home Page";
 }
 
-<div class="jumbotron"> 
-    <h1>GeneralStore.MVC</h1>
-    <p class="lead">GeneralStore.MVC is an app that allows users to create Products, Customers, and Transactions, which will combine the two existing models. </p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <div class="jumbotron">
+        <h1>GeneralStore.MVC</h1>
+        <p class="lead">GeneralStore.MVC is an app that allows users to create Products, Customers, and Transactions, which will combine the two existing models. </p>
+        @Html.ActionLink("Learn More About Us", "About")
+    </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started!</h2>
+        <h2>Products</h2>
         <p>
-            Click on the navbar button link to Create a Product or click below on the button that says Create a Product.
+            Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br />
+            Come browse our products and see what we have for you.
         </p>
-        <p><a class="btn btn-default" href="/Product">Create a Product &raquo;</a></p>
+        @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
         <h2>Get more information</h2>
