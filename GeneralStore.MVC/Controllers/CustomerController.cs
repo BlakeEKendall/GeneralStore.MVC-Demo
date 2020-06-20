@@ -15,7 +15,7 @@ namespace GeneralStore.MVC.Controllers
         public ActionResult Index()
         {
             List<Customer> customerList = _db.Customers.ToList();
-            List<Customer> orderedCustomerList = customerList.OrderBy(prod => prod.LastName).ToList();
+            List<Customer> orderedCustomerList = customerList.OrderBy(cust => cust.LastName).ToList();
             return View(orderedCustomerList);
 
         }
