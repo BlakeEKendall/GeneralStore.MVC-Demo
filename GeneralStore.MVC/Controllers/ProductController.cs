@@ -1,10 +1,8 @@
 ﻿using GeneralStore.MVC.Models;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 
 namespace GeneralStore.MVC.Controllers
@@ -82,7 +80,7 @@ namespace GeneralStore.MVC.Controllers
             {
                 return HttpNotFound();
             }
-            return View(product); 
+            return View(product);
         }
 
         // POST: Edit
